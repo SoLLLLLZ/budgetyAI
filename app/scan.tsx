@@ -24,7 +24,7 @@ import SectionLabel from '../components/SectionLabel';
 import { useAuth } from '../context/AuthContext';
 import { theme } from '../theme';
 
-const OPENROUTER_API_KEY = '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';
+const OPENROUTER_API_KEY = process.env.EXPO_PUBLIC_OPENROUTER_API_KEY!;
 
 const client = new OpenAI({
   baseURL: 'https://openrouter.ai/api/v1',
