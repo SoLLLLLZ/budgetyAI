@@ -1,0 +1,32 @@
+export const theme = {
+  colors: {
+    background: '#07070F',
+    surface: 'rgba(255,255,255,0.04)',
+    surfaceModal: '#0F0F1A',
+    border: 'rgba(255,255,255,0.08)',
+    neonPink: '#ff2d9b',
+    neonCyan: '#00f0ff',
+    neonPurple: '#a78bfa',
+    neonGreen: '#39ff9a',
+    text: '#FFFFFF',
+    textMuted: 'rgba(255,255,255,0.45)',
+    textDim: 'rgba(255,255,255,0.2)',
+    success: '#39ff9a',
+    danger: '#ff2d9b',
+    warning: '#f59e0b',
+    income: '#39ff9a',
+    expense: '#ff2d9b',
+  },
+  spacing: { xs: 4, sm: 8, md: 16, lg: 24, xl: 32, xxl: 48 },
+  radius: { sm: 8, md: 14, lg: 20, widget: 20, full: 999 },
+  font: {
+    xs: 10, sm: 11, md: 13, lg: 15, xl: 20, xxl: 28, hero: 36,
+    weight: { regular: '400' as const, medium: '500' as const, bold: '600' as const },
+  },
+  glow: {
+    pink:   { shadowColor: '#ff2d9b', shadowOffset: { width: 0, height: 0 }, shadowOpacity: 0.7, shadowRadius: 10 },
+    cyan:   { shadowColor: '#00f0ff', shadowOffset: { width: 0, height: 0 }, shadowOpacity: 0.7, shadowRadius: 10 },
+    purple: { shadowColor: '#a78bfa', shadowOffset: { width: 0, height: 0 }, shadowOpacity: 0.7, shadowRadius: 10 },
+    green:  { shadowColor: '#39ff9a', shadowOffset: { width: 0, height: 0 }, shadowOpacity: 0.7, shadowRadius: 10 },
+  },
+};

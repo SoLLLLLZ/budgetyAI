@@ -1,0 +1,52 @@
+For this homework I used a mix of Claude browser, Claude Code, and Manus. I used the Claude browser
+function to plan the project and develop the main idea. Additionally, I also used Claude to plan out the 
+UI design and had it create mock ups for my app. I also used Manus to create mock up designs of the app. 
+I used Claude Code to create the full app. 
+
+I created a spec.md and an implementation.md that I fed to Claude Code. Those were based on my starting prompts. 
+
+Prompts to create spec.md and implementation.md:
+- Read this homework assignment: https://www.cs.cmu.edu/~113/hw9.html
+I am currently working on this and I want you to review my implementation plan/spec as well as iterate on it
+- Q: What device/environment are you targeting?
+A: iPhone simulator (Mac)
+
+Q: How much React Native / mobile dev experience do you have?
+A: None — totally new
+
+Q: What's your priority for this review?
+A: Help restructuring into a proper SPEC.md
+- now give me a short implementation plan with phased implementation on what is most reasonable first. 
+Also give me a criterias for success and how the agent should test to make sure that everything works for 
+the agentic build
+- when would be the best way to implement the UI
+- wait for the design I want to have a central hub with widgets similar to iphone widgets. 
+Each widget will represent a different screen and the cover image of the widget will be some important details. 
+And then you can click into each widget to go the whatever screen
+- Q: How do users navigate back to the hub after going into a screen?
+A: Back button / swipe back (stack navigation)
+
+Q: What should the hub itself look like?
+A: Neon japan theme. I will upload a picture later for inspriation
+
+Q: What about the tab bar — do you still want it?
+A: No — hub replaces it entirely, widgets are the only nav
+- ok that's fine but for the main page I want to have those specific icons be part 
+of the widget background. similar to how iphone does it where each widget is an image. 
+I want to have each widget be their respective image
+
+Prompts for the implementation and Expo Go:
+- Read these docs and explain to me how it will work. Will it be an actual app on my phone or how does it work:
+https://docs.expo.dev/get-started/start-developing/
+- Look into this repo. I am completing this homework assignmnet: https://www.cs.cmu.edu/~113/hw9.html
+Look into the spec.md and the implementation.md.
+Here are the docs for Expo Go: https://docs.expo.dev/get-started/start-developing/
+Docs for openRouter: https://openrouter.ai/docs/quickstart
+What do you think of the current plan, does everything look correct/correct techstack and is there anything missing or that would hinder the development
+- In image 5 I especially like that image design. If you could recreate or use some 
+of those images explicitly that would make the UI good (wave, sunset, city, rocket, flamingo)
+- when I click the textboxes for login. The keyboard flashes on screen for an instant and then disappears so I can't access it. 
+Fix that issue. Also be mindful of how much usage you use since I am nearing my limit
+- 
+ok so is the issue fixed now. Can you test if you can open the keyboard (it will stay up) and you can type. Run this test 10 times
+
